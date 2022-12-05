@@ -4,6 +4,7 @@ import defaultHandler from './defaultHandler.js';
 import helpers from './helpers.js';
 import {safeJSON} from "./utils.js";
 
+
 const processedContentTypes = {
     'text/html': (text) => text,
     'text/plain': (text) => text,
