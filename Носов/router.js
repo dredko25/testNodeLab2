@@ -25,7 +25,7 @@ async function loadRoutesDir(dirName, base) {
     }
 }
 
-let Dir = await loadRoutesDir('', path.sep);
+await loadRoutesDir('', path.sep);
 console.log(router);
 
 export default router;
