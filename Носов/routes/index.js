@@ -1,11 +1,11 @@
 function GET(req, res, url, payload) {
     const QueryString = module.exports = {
-        // unescapeBuffer,
-        // unescape: qsUnescape,
-        // escape: qsEscape,
+        unescapeBuffer,
+        unescape: qsUnescape,
+        escape: qsEscape,
 
-        // stringify,
-        // encode: stringify,
+        stringify,
+        encode: stringify,
       
         parse,
         decode: parse
