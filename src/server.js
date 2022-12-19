@@ -5,6 +5,7 @@ import helpers from './helpers.js';
 import {safeJSON} from "./utils.js";
 
 
+
 const processedContentTypes = {
     'text/html': (text) => text,
     'text/plain': (text) => text,
@@ -17,8 +18,6 @@ const processedContentTypes = {
 const server = http.createServer(async (req, res) => {
 
     const url = new URL(req.url || '/', `https://${req.headers.host}`);
-    // let URLParams = new URLSearchParams(`"${url}"`);
-    // console.log(URLParams);
     
     console.log(url.searchParams);
     const routeModule = router.get(url.pathname) ?? {};
