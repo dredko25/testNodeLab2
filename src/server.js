@@ -17,7 +17,6 @@ const processedContentTypes = {
 const server = http.createServer(async (req, res) => {
 
     const url = new URL(req.url || '/', `https://${req.headers.host}`);
-    
     console.log(url.searchParams);
     const routeModule = router.get(url.pathname) ?? {};
     const handler = routeModule[req?.method] ?? defaultHandler;

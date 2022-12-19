@@ -16,7 +16,7 @@ function GET(req, res, url, payload) {
     // res.json({name: `Parsed Query: ${parsedObject}`});
     const ip = res.socket.remoteAddress;
     const port = res.socket.remotePort;
-    res.json({name: `Path ${url.pathname}.Your IP address is ${ip} and your source port is ${port}.`})
+    res.json({name: `Path ${url.searchParams}.Your IP address is ${ip} and your source port is ${port}.`})
 }
 
 function OPTIONS(req, res, url, payload) {
